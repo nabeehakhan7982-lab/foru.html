@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Roses for You</title>
+
+<style>
+    body {
+        background: #ffe6ec;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 40px;
+    }
+
+    h1 {
+        color: #c2185b;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .rose {
+        width: 180px;
+        margin-bottom: 20px;
+    }
+
+    #message {
+        margin-top: 25px;
+        font-size: 24px;
+        color: #b0003a;
+        min-height: 40px;
+        font-weight: bold;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        background: #ff4d6d;
+        color: white;
+        cursor: pointer;
+        margin: 8px;
+        transition: 0.2s;
+    }
+
+    button:hover {
+        background: #d93657;
+    }
+</style>
+
+</head>
+<body>
+
+<h1>Roses for You 🌹</h1>
+
+<img class="rose" src="https://i.imgur.com/1vZ4Y0v.png" />
+
+<div id="message"></div>
+
+<button onclick="showMessage(0)">How much I care</button>
+<button onclick="showMessage(1)">How much I miss you</button>
+<button onclick="showMessage(2)">How much I love you</button>
+<button onclick="showMessage(3)">How much you mean to me</button>
+
+<script>
+    const lines = [
+        "This is how much I care about you… more than you even know ❤️",
+        "This is how much I miss you… every moment, every second 💫",
+        "This is how much I love you… endlessly, completely, truly 💖",
+        "This is how much you mean to me… everything, and even more 🌹"
+    ];
+
+    function showMessage(i) {
+        document.getElementById("message").innerHTML = lines[i];
+    }
+</script>
+
+</body>
+</html>
